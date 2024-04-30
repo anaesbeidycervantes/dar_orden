@@ -1,55 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inicio de Sesión</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<style>
-    body {
-        background-color: #f8f9fa;
-    }
-    .container {
-        max-width: 700px;
-        margin: 100px auto;
-        padding: 20px;
-        border-radius: 5px;
-        background-color: #fff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        position: relative; /* Agregado para permitir el posicionamiento relativo */
-    }
-    .form-group {
-        margin-bottom: 20px;
-    }
-    .img-container {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px; /* Espacio entre la imagen y el campo de usuario */
-    }
-    .img-container img {
-        max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
-        height: auto;
-    }
-    .card {
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-    #mensaje-container {
-        padding: 10px;
-        background-color: #e9ecef;
-        border: 1px solid #ced4da;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 700px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative; /* Agregado para permitir el posicionamiento relativo */
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .img-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px; /* Espacio entre la imagen y el campo de usuario */
+        }
+        .img-container img {
+            max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+            height: auto;
+        }
+        .card {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        #mensaje-container {
+            padding: 10px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-
-<!-- Mensaje de error para navegadores no compatibles -->
-<div class="container" id="error-container" style="display: none;">
-    <div class="alert alert-danger" role="alert">
-        El reconocimiento de voz no es compatible con este navegador. Por favor, utiliza un navegador compatible.
-    </div>
-</div>
 
 <!-- Card oculto -->
 <div class="container mt-5" id="card-container" style="display: none;">
