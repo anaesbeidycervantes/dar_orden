@@ -75,5 +75,7 @@ function iniciarReconocimientoVoz() {
     };
 }
 
-// Llamamos a la función para iniciar el reconocimiento de voz cuando la página se carga
-window.onload = iniciarReconocimientoVoz;
+// Llamamos a la función para iniciar el reconocimiento de voz cuando se haga clic en el botón "Empezar"
+document.getElementById("startButton").addEventListener("click", function() {
+    iniciarReconocimientoVoz();
+});
