@@ -44,6 +44,13 @@
 </head>
 <body>
 
+<!-- Mensaje de error para navegadores no compatibles -->
+<div class="container" id="error-container" style="display: none;">
+    <div class="alert alert-danger" role="alert">
+        El reconocimiento de voz no es compatible con este navegador. Por favor, utiliza un navegador compatible.
+    </div>
+</div>
+
 <!-- Card oculto -->
 <div class="container mt-5" id="card-container" style="display: none;">
     <div class="card">
@@ -51,14 +58,14 @@
             <h5 class="card-title text-center">¡Bienvenido!</h5>
             <p class="card-text text-center">Puedes comenzar a dar órdenes ahora.</p>
             <img src="../imágenes/ordenar.jpg" class="img-fluid mx-auto d-block" alt="Ordenar">
-            <button id="detener" class="btn btn-danger btn-block mt-3">Detener</button>
+            <button id="detenerVoice" class="btn btn-danger btn-block mt-3">Detener</button>
         </div>
     </div>
 </div>
 
 <div class="container" id="mensaje-container" style="display: none;">
     <div id="mensaje" class="text-center"></div>
-    <button id="detener" class="btn btn-danger btn-block mt-3">Detener</button>
+    <button id="detenerButton" class="btn btn-danger btn-block mt-3">Detener</button>
     <button id="login" class="btn btn-primary btn-block mt-3">Login</button>
 </div>
 
