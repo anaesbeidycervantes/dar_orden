@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función para iniciar el reconocimiento de voz
     function iniciarReconocimiento() {
-        const reconocimientoVoz = new (webkitSpeechRecognition || SpeechRecognition)();
+        const reconocimientoVoz = new webkitSpeechRecognition() || new SpeechRecognition();
         reconocimientoVoz.lang = 'es-ES';
 
         reconocimientoVoz.onstart = function() {
